@@ -1,0 +1,318 @@
+.v-application {
+	.btn {
+		border-radius: 0.8rem !important;
+		height: 4.2rem !important;
+		font-size: 1.6rem !important;
+		padding: 0 1.6rem !important;
+		box-shadow: none !important;
+		font-family: var(--font-primary) !important;
+		text-transform: none !important;
+		letter-spacing: 0 !important;
+
+		.v-btn__content {
+			font-weight: 600 !important;
+		}
+
+		//=== Button type ===//
+		&--primary {
+			color: var(--color-white) !important;
+			border: none;
+
+			//=== Button color ===//
+			&.btn--green {
+				background-color: var(--color-primary) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-primary), var(--level-3)) !important;
+					color: var(--color-white) !important;
+				}
+
+				&.v-btn--has-bg.v-btn--disabled {
+					background-color: alpha(var(--color-primary), var(--level-2)) !important;
+					color: var(--color-white) !important;
+				}
+			}
+
+			&.btn--red {
+				background-color: var(--color-red) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-red), var(--level-3)) !important;
+					color: var(--color-white) !important;
+				}
+			}
+
+			&.btn--yellow {
+				background-color: var(--color-yellow) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-yellow), var(--level-3)) !important;
+					color: var(--color-white) !important;
+				}
+			}
+
+			&.btn--gray {
+				background-color: var(--color-gray) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-gray), var(--level-3)) !important;
+					color: var(--color-white) !important;
+				}
+			}
+
+			&.btn--blue {
+				background-color: var(--color-blue) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-blue), var(--level-3)) !important;
+					color: var(--color-white) !important;
+				}
+			}
+		}
+
+		&--outline {
+			background-color: transparent !important;
+
+			&.btn--green {
+				border: 0.2rem solid var(--color-primary) !important;
+				color: var(--color-primary) !important;
+
+				&:hover,
+				&:focus {
+					background-color: var(--color-primary) !important;
+					color: var(--color-white) !important;
+				}
+
+				&.v-btn--has-bg.v-btn--disabled {
+					border: 0.2rem solid var(--color-primary) !important;
+					color: var(--color-primary) !important;
+					background-color: transparent !important;
+					opacity: 0.5;
+				}
+			}
+
+			&.btn--red {
+				border: 0.2rem solid var(--color-red) !important;
+				color: var(--color-red) !important;
+
+				&:hover,
+				&:focus {
+					background-color: var(--color-red) !important;
+					color: var(--color-white) !important;
+				}
+			}
+
+			&.btn--yellow {
+				border: 0.2rem solid var(--color-yellow) !important;
+				color: var(--color-yellow) !important;
+
+				&:hover,
+				&:focus {
+					background-color: var(--color-yellow) !important;
+					color: var(--color-white) !important;
+				}
+			}
+
+			&.btn--gray {
+				border: 0.2rem solid alpha(var(--color-gray), var(--level-1)) !important;
+				color: alpha(var(--color-gray), var(--level-3)) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-gray), var(--level-2)) !important;
+					color: var(--color-black) !important;
+				}
+			}
+
+			&.btn--blue {
+				border: 0.2rem solid var(--color-blue) !important;
+				color: var(--color-blue) !important;
+
+				&:hover,
+				&:focus {
+					background-color: var(--color-blue) !important;
+					color: var(--color-white) !important;
+				}
+			}
+		}
+
+		&--ghost {
+			.v-btn__content {
+				font-weight: 500 !important;
+			}
+
+			&.btn--green {
+				color: var(--color-green) !important;
+				background-color: alpha(var(--color-green), 0.12) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-green), var(--level-2)) !important;
+					color: var(--color-green) !important;
+				}
+			}
+
+			&.btn--red {
+				color: var(--color-red) !important;
+				background-color: alpha(var(--color-red), var(--level-1)) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-red), var(--level-2)) !important;
+					color: var(--color-red) !important;
+				}
+			}
+
+			&.btn--yellow {
+				color: var(--color-yellow) !important;
+				background-color: alpha(var(--color-yellow), var(--level-1)) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-yellow), var(--level-2)) !important;
+					color: var(--color-yellow) !important;
+				}
+			}
+
+			&.btn--gray {
+				color: alpha(var(--color-gray), var(--level-3)) !important;
+				background-color: alpha(var(--color-gray), var(--level-1));
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-gray), var(--level-2)) !important;
+					color: var(--color-black);
+				}
+			}
+
+			&.btn--blue {
+				color: var(--color-blue) !important;
+				background-color: alpha(var(--color-blue), var(--level-1)) !important;
+
+				&:hover,
+				&:focus {
+					background-color: alpha(var(--color-blue), var(--level-2)) !important;
+					color: var(--color-blue) !important;
+				}
+			}
+		}
+
+		&--gradient {
+			color: var(--color-white) !important;
+			border: none;
+
+			&.btn--red {
+				background: linear-gradient(136.11deg, #ff575b 30.6%, #ff7b93 90.76%) !important;
+			}
+
+			&.btn--yellow {
+				background: linear-gradient(137.58deg, #ffd991 12.75%, #fbb94a 86.55%) !important;
+			}
+
+			&.btn--orange {
+				background: linear-gradient(137.43deg, #fb5458 12.76%, #fbb854 89.2%) !important;
+			}
+
+			&.btn--blue {
+				background: linear-gradient(137.43deg, #6190fe 12.76%, #2958c6 89.2%) !important;
+			}
+		}
+
+		&--sm {
+			height: 3.2rem !important;
+			font-size: 1.4rem;
+			border-radius: 0.6rem !important;
+			overflow: hidden;
+		}
+	}
+
+	.btn--withIcon {
+		i {
+			margin-right: 0.4rem;
+			font-size: 2rem;
+		}
+	}
+
+	.btn--icon {
+		min-width: 0 !important;
+		padding: 0 !important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 3.2rem !important;
+		height: 3.2rem !important;
+		border-radius: 50% !important;
+
+		i {
+			font-size: 1.8rem !important;
+		}
+
+		&.btn--green {
+			color: var(--color-primary) !important;
+			background-color: alpha(var(--color-primary), var(--level-1)) !important;
+
+			&:hover,
+			&:focus {
+				background-color: alpha(var(--color-primary), var(--level-2)) !important;
+				color: var(--color-primary) !important;
+			}
+		}
+
+		&.btn--red {
+			color: var(--color-red) !important;
+			background-color: alpha(var(--color-red), var(--level-1)) !important;
+
+			&:hover,
+			&:focus {
+				background-color: alpha(var(--color-red), var(--level-2)) !important;
+				color: var(--color-red) !important;
+			}
+		}
+
+		&.btn--yellow {
+			color: var(--color-yellow) !important;
+			background-color: alpha(var(--color-yellow), var(--level-1)) !important;
+
+			&:hover,
+			&:focus {
+				background-color: alpha(var(--color-yellow), var(--level-2)) !important;
+				color: var(--color-yellow) !important;
+			}
+		}
+
+		&.btn--gray {
+			color: alpha(var(--color-gray), var(--level-3)) !important;
+			background-color: alpha(var(--color-gray), var(--level-1));
+
+			&:hover,
+			&:focus {
+				background-color: alpha(var(--color-gray), var(--level-2)) !important;
+				color: var(--color-black);
+			}
+		}
+
+		&.btn--blue {
+			color: var(--color-blue) !important;
+			background-color: alpha(var(--color-blue), var(--level-1)) !important;
+
+			&:hover,
+			&:focus {
+				background-color: alpha(var(--color-blue), var(--level-2)) !important;
+				color: var(--color-blue) !important;
+			}
+		}
+	}
+
+	.v-btn.v-btn--disabled  {
+		cursor: not-allowed !important;
+	}
+
+	.v-btn--disabled {
+		pointer-events: auto;
+	}
+}

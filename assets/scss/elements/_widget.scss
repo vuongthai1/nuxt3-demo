@@ -1,0 +1,10 @@
+.widget {
+	padding: 2.4rem;
+	border-radius: 0.8rem;
+	background-color: var(--color-white);
+	border: 1px solid alpha(var(--color-gray), var(--level-2));
+	.widget__title {
+		font-weight: 500;
+		color: var(--color-heading);
+	}
+}

@@ -1,0 +1,20 @@
+$color-1st: var(--color-1st);
+$color-2nd: var(--color-2nd);
+$color-success: var(--color-success);
+$color-info: var(--color-info);
+$color-warning: var(--color-warning);
+$color-danger: var(--color-danger);
+$color-border: var(--color-border);
+$color-text: var(--color-text);
+$color-contrast: var(--color-contract);
+$color-heading: var(--color-heading);
+$color-gray: var(--color-gray);
+$color-link: var(--color-1st);
+
+$color-contrast: #fff;
+
+$color-contrast-lower: darken($color-contrast, 5%);
+$color-contrast-low: darken($color-contrast, 17%);
+$color-contrast-medium: darken($color-contrast, 52%);
+$color-contrast-high: darken($color-contrast, 80%);
+$color-contrast-high: darken($color-contrast, 88%);

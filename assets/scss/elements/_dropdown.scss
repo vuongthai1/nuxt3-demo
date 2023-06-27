@@ -1,0 +1,27 @@
+.ps-dropdown {
+    position: relative;
+
+    &__toggle {
+
+    }
+
+    &__content {
+      /*  position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;*/
+       /* min-width: 200px;
+        max-width: 240px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+        border-radius: 4px;*/
+
+        transition: transform .4s ease;
+
+
+
+    }
+
+
+}

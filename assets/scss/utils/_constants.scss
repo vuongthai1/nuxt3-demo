@@ -1,0 +1,113 @@
+// refer: https://codyhouse.co/blog/post/how-to-combine-sass-color-functions-and-css-variables
+:root {
+    // colors
+    @include defineColorHSL(--color-1st, 216, 59%, 12%); // #0D1C32;
+    @include defineColorHSL(--color-2nd, 42, 52%, 51%); // #C29B40;
+    // @include defineColorHSL(--color-primary, 168, 100%, 19%); // #00634F;
+    @include defineColorHSL(--color-warning, 42, 82%, 59%); // #ECB842;
+    @include defineColorHSL(--color-danger, 359, 95%, 66%); //#FB5458
+    @include defineColorHSL(--color-secondary, 218, 11%, 41%); //#5D6573
+    @include defineColorHSL(--color-basic, 222, 66%, 47%); //#2958C6;
+    @include defineColorHSL(--color-success, 88, 50%, 53%); // #8bc34a;
+    @include defineColorHSL(--color-info, 0, 0%, 85%); // #d9d9d9;
+    @include defineColorHSL(--color-border, 220, 14%, 91%); // #e6e8ec;
+    @include defineColorHSL(--color-border-active, 223, 10%, 52%); // #777e90;
+    // @include defineColorHSL(--color-heading, 225, 15%, 16%); // #23262f;
+    // @include defineColorHSL(--color-gray, 0, 0%, 89%); // #e4e4e4;
+    @include defineColorHSL(--color-bg, 0, 0%, 100%); // #f4f5f6;
+    @include defineColorHSL(--color-bg-light, 33, 100%, 96%); // #fff7ed;
+    @include defineColorHSL(--color-bg-dark, 227, 13%, 14%); // #1F2128;
+    @include defineColorHSL(--color-primary, 168, 100%, 19%); // #00634F;
+    @include defineColorHSL(--color-gray, 218, 11%, 41%); // #5D6573;
+    @include defineColorHSL(--color-blue, 222, 66%, 47%); // #2958C6;
+    @include defineColorHSL(--color-yellow, 38, 96%, 64%); // #FBB94A;
+    @include defineColorHSL(--color-red, 359, 95%, 66%); // #FB5458;
+    @include defineColorHSL(--color-heading, 224, 39%, 13%); // #141B2E;
+    @include defineColorHSL(--color-white, 0, 0%, 100%); //#FFFFFF
+    @include defineColorHSL(--color-black, 0, 0, 0%); //#000000
+    @include defineColorHSL(--color-green, 104, 39%, 59%); //#83BF6E
+    @include defineColorHSL(--color-light-green, 147, 47%, 80%); //#B4E4CA
+    @include defineColorHSL(--color-dark-blue, 226, 20%, 34%); //#454d68
+    @include defineColorHSL(--color-light-blue, 220,100%,98%); //#f3f7ff
+    @include defineColorHSL(--color-light-yellow, 39,100%,78%); //#ffd88d
+    @include defineColorHSL(--color-bg-gray, 240,14%,97%); //#f7f7f9
+
+    // reversed color
+    --color-menu: #00634f;
+    // --color-menu-black: #000000;
+    --color-text: hsla(218, 11%, 41%, 0.8);
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-light-green: #B4E4CA;
+    --color-dark-blue: #454d68;
+    --color-light-blue: #f3f7ff;
+    --color-light-yellow: #ffd88d;
+    --color-bg-gray: #f7f7f9;
+    --color-heading-label: #cabdff;
+    --color-green: #83bf6e;
+    --color-red: #fb5458;
+    --color-bg-lightgray:  #FAFAFA;
+    --color-orange: #FFBD99;
+    --color-purple: #CABDFF;
+    --color-green: #B4E4CA;
+    --color-info: #B1E5FC;
+    --color-yellow: #FFD88D;
+    --color-active: #83BF6E;
+    --color-bg-active:rgba(131, 191, 110, 0.12);
+    --color-deactive: #FB5458;
+    --color-blue: #2958C6;
+    --color-background-tooltip: rgba(20, 27, 46, 0.8);
+    // background
+    --bg-menu: #C2D2CF;
+    // background color HEX
+    /*   --color-white: #FFFFFF;
+    --bg-green: #00634F;
+    --bg-red: #FB5458;
+    --bg-yellow: #FBB94A;
+    --bg-gray: #5D6573;
+    --bg-blue: #2958C6;*/
+
+    // background color HEX
+    /*   --color-white: #FFFFFF;
+	   --bg-green: #00634F;
+	   --bg-red: #FB5458;
+	   --bg-yellow: #FBB94A;
+	   --bg-gray: #5D6573;
+	   --bg-blue: #2958C6;*/
+
+    // opacity level
+    --level-1: 0.06;
+    --level-2: 0.2;
+    --level-3: 0.8;
+    --level-4: 1;
+
+    // border-radius
+    --border-radius-large: 1.6rem;
+    --border-radius-medium: 0;
+    --border-radius-small: 0;
+    --border-radius-tiny: 0;
+
+    // spaces
+    --space-tiny: 0.4rem;
+    --space-small: 0.8rem;
+    --space-standard: 1.6rem;
+    --space-large: 3.2rem;
+    --space-extra-large: 6.4rem;
+    --space-xx-large: 8rem;
+    --container-width: 120rem;
+
+    // font-sizes
+    --font-size-default: 1.4rem;
+
+    // height
+    --input-height: 4.8rem;
+    --section-padding: 80rem;
+
+    // fonts
+    --font-primary: "Poppins", sans-serif; // "Inter", sans-serif;
+    --font-second: "Poppins", sans-serif;
+}
+
+[data-theme="dark"] {
+    // enter defination here
+}

@@ -1,0 +1,40 @@
+#__layout {
+    .v-application {
+        .row{
+            margin: -0.6rem;
+        }
+        .col,
+        [class*="col-"] {
+            padding: 0.6rem;
+        }
+    }
+
+}
+.v-application {
+    .v-text-field.v-text-field--enclosed {
+        .v-text-field__details {
+            padding-left: 0;
+        }
+    }
+    .v-menu__content {
+        &:not([role="menu"]) {
+            margin-top: 4rem;
+        }
+    }
+    .v-autocomplete__content {
+        &:not([role="menu"]) {
+            margin-top: 0;
+        }
+        .v-list-item__action:first-child {
+            margin-right: 1.6rem;
+        }
+    }
+    .v-list--dense {
+        .v-list-item {
+            .v-list-item__title {
+                line-height: 1.6rem;
+            }
+        }
+    }
+    
+}
